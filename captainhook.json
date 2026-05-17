@@ -1,0 +1,22 @@
+{
+    "pre-commit": {
+        "enabled": true,
+        "actions": [
+            {
+                "action": "vendor/bin/pint --test",
+                "options": [],
+                "conditions": []
+            },
+            {
+                "action": "vendor/bin/phpstan analyse",
+                "options": [],
+                "conditions": []
+            },
+            {
+                "action": "vendor/bin/phpunit",
+                "options": [],
+                "conditions": []
+            }
+        ]
+    }
+}
